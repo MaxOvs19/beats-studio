@@ -1,3 +1,9 @@
+@import "./assets/font/font.css";
+
 * {
-  background-color: black;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  list-style: none;
+  font-family: "Gilroy";
 }

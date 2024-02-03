@@ -1,0 +1,37 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+
+  &-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+      106.17deg,
+      rgb(105, 177, 201) 0.132%,
+      rgb(96, 129, 195) 50.675%,
+      rgb(85, 88, 175) 99.946%
+    );
+    font-size: 14px;
+    line-height: 120%;
+    color: white;
+    padding: 10px;
+  }
+
+  &-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(11, 11, 11);
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 12px;
+    line-height: 130%;
+    padding: 16px 16px 0;
+
+    ul {
+      display: flex;
+      gap: 40px;
+    }
+  }
+}
