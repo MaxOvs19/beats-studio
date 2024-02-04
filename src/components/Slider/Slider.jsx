@@ -4,7 +4,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "./slider.scss";
 import "swiper/css";
 
-import SliderButtons from "../SliderButtons/SliderButtons";
 import SliderItem from "../SliderItem/SliderItem";
 import { arrImg } from "./img";
 import Settings from "../Settings/Settings";
@@ -13,9 +12,6 @@ const Slider = () => {
   return (
     <>
       <Swiper>
-        <SliderButtons type={0} />
-        <SliderButtons type={1} />
-
         {arrImg.map((item) => {
           return (
             <SwiperSlide>

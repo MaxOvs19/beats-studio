@@ -99,19 +99,13 @@
       border: none;
       background: transparent;
 
-      &:hover,
-      &:focus,
-      &:active {
-        border: 1px solid rgb(98, 98, 98);
-      }
-
       p {
         border-radius: 900px;
         width: 35px;
         height: 35px;
       }
 
-      &:first-child {
+      &:nth-child(1) {
         p {
           background: rgb(173, 172, 177);
         }
@@ -183,4 +177,8 @@
       background: rgb(247, 247, 247);
     }
   }
+}
+
+.activeColor {
+  border: 1px solid rgb(98, 98, 98) !important;
 }

@@ -12,6 +12,7 @@ import "./settings.scss";
 
 const Settings = ({}) => {
   const swiper = useSwiper();
+  const [active, setActive] = useState(0);
 
   return (
     <div className="settings">
@@ -27,16 +28,40 @@ const Settings = ({}) => {
       </div>
       <h6>Color:</h6>
       <div className="settings-selector">
-        <button onClick={() => swiper.slideTo(0)}>
+        <button
+          onClick={() => {
+            swiper.slideTo(0);
+            setActive(0);
+          }}
+          className={active == 0 ? "activeColor" : ""}
+        >
           <p></p>
         </button>
-        <button onClick={() => swiper.slideTo(1)}>
+        <button
+          onClick={() => {
+            swiper.slideTo(1);
+            setActive(1);
+          }}
+          className={active == 1 ? "activeColor" : ""}
+        >
           <p></p>
         </button>
-        <button onClick={() => swiper.slideTo(2)}>
+        <button
+          onClick={() => {
+            swiper.slideTo(2);
+            setActive(2);
+          }}
+          className={active == 2 ? "activeColor" : ""}
+        >
           <p></p>
         </button>
-        <button onClick={() => swiper.slideTo(3)}>
+        <button
+          onClick={() => {
+            swiper.slideTo(3);
+            setActive(3);
+          }}
+          className={active == 3 ? "activeColor" : ""}
+        >
           <p></p>
         </button>
       </div>

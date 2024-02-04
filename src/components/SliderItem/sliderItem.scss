@@ -29,3 +29,23 @@
     }
   }
 }
+
+.activeImg {
+  border: 1px solid #8080805c;
+}
+
+.left {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.right {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+
+  img {
+    transform: rotate(180deg);
+  }
+}
