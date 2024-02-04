@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "./slider.scss";
@@ -8,43 +8,25 @@ import slide1 from "../../assets/sliders/slide1-0.png";
 import slide12 from "../../assets/sliders/slide1-1.png";
 import slide13 from "../../assets/sliders/slide1-2.png";
 import SliderButtons from "../SliderButtons/SliderButtons";
+import SliderItem from "../SliderItem/SliderItem";
+import { arrImg } from "./img";
 
 const Slider = () => {
+  const [image, setImage] = useState(slide1);
+
   return (
     <>
       <Swiper>
         <SliderButtons type={0} />
         <SliderButtons type={1} />
-        <SwiperSlide>
-          <div className="slide">
-            <img src={slide1} alt="@" />
-            <div className="slide-type">
-              <img src={slide1} alt="@" />
-              <img src={slide12} alt="@" />
-              <img src={slide13} alt="@" />
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="slide">
-            <img src={slide1} alt="@" />
-            <div className="slide-type">
-              <img src={slide1} alt="@" />
-              <img src={slide12} alt="@" />
-              <img src={slide13} alt="@" />
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="slide">
-            <img src={slide1} alt="@" />
-            <div className="slide-type">
-              <img src={slide1} alt="@" />
-              <img src={slide12} alt="@" />
-              <img src={slide13} alt="@" />
-            </div>
-          </div>
-        </SwiperSlide>
+
+        {arrImg.map((item) => {
+          return (
+            <SwiperSlide>
+              <SliderItem images={item} />
+            </SwiperSlide>
+          );
+        })}
       </Swiper>
     </>
   );

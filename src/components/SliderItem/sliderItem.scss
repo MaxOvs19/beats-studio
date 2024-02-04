@@ -1,0 +1,31 @@
+.slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 24px;
+
+  &-img-main {
+    width: 95%;
+    border-radius: 98px;
+    border: 1px solid #8080805c;
+    margin-bottom: 15px;
+  }
+
+  &-type {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 7px;
+
+    img {
+      width: 116px;
+      border-radius: 33px;
+
+      &:hover,
+      &:focus,
+      &:active {
+        border: 1px solid #8080805c;
+      }
+    }
+  }
+}

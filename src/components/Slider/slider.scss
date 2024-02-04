@@ -1,36 +1,15 @@
-.slide {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  img {
-    width: 95%;
-  }
-
-  &-type {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 7px;
-
-    img {
-      width: 116px;
-    }
-  }
-}
-
 .swiper {
   .left {
     z-index: 99;
-    top: 140px;
-    left: 9px;
+    top: 170px;
+    left: 15px;
     position: absolute;
   }
 
   .right {
     z-index: 99;
     position: absolute;
-    top: 140px;
-    right: 9px;
+    top: 170px;
+    right: 15px;
   }
 }
