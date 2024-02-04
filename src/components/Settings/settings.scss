@@ -1,0 +1,186 @@
+.settings {
+  margin: 20px 10px;
+
+  h1 {
+    color: rgb(40, 40, 40);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 110%;
+  }
+
+  &-desc {
+    color: rgba(40, 40, 40, 0.8);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 130%;
+  }
+
+  &-cost {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    gap: 8px;
+
+    span {
+      color: rgba(40, 40, 40, 0.8);
+      text-decoration-line: line-through;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 130%;
+    }
+
+    h2 {
+      color: rgb(40, 40, 40);
+      font-size: 40px;
+      font-weight: 500;
+      line-height: 48px;
+    }
+
+    div {
+      padding: 10px;
+      border-radius: 40px;
+      background: linear-gradient(
+        106.17deg,
+        rgb(105, 177, 201) 1.681%,
+        rgb(96, 129, 195) 51.116%,
+        rgb(85, 88, 175) 99.307%
+      );
+
+      span {
+        color: white;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 24px;
+
+        &:last-child {
+          padding-left: 7px;
+        }
+      }
+    }
+  }
+
+  h6 {
+    margin-top: 20px;
+    text-transform: uppercase;
+    color: rgb(40, 40, 40);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 110%;
+  }
+
+  &-button-buy {
+    margin-top: 10px;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    padding: 20px;
+    background: rgb(40, 40, 40);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 130%;
+  }
+
+  &-selector {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    button {
+      border-radius: 900px;
+      width: 45px;
+      height: 45px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      background: transparent;
+
+      &:hover,
+      &:focus,
+      &:active {
+        border: 1px solid rgb(98, 98, 98);
+      }
+
+      p {
+        border-radius: 900px;
+        width: 35px;
+        height: 35px;
+      }
+
+      &:first-child {
+        p {
+          background: rgb(173, 172, 177);
+        }
+      }
+
+      &:nth-child(2) {
+        p {
+          background: rgb(40, 40, 40);
+        }
+      }
+
+      &:nth-child(3) {
+        p {
+          background: rgb(236, 170, 167);
+        }
+      }
+
+      &:nth-child(4) {
+        p {
+          border-radius: 900px;
+          width: 35px;
+          height: 35px;
+
+          background: rgb(236, 229, 221);
+        }
+      }
+    }
+  }
+
+  &-time {
+    margin-top: 17px;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(246, 93, 129);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 130%;
+
+    div {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+    }
+
+    p {
+      color: rgb(246, 93, 129);
+      letter-spacing: 1px;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 110%;
+    }
+  }
+
+  &-payment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 40px;
+      border-radius: 20px;
+      width: 70px;
+      background: rgb(247, 247, 247);
+    }
+  }
+}

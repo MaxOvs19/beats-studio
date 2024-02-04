@@ -1,6 +1,7 @@
 import React from "react";
 import Banner from "../../components/Banner/Banner";
 import Slider from "../../components/Slider/Slider";
+import Settings from "../../components/Settings/Settings";
 
 import star from "../../assets/logo-star.svg";
 
@@ -14,7 +15,6 @@ const Home = () => {
         <p>See our 437 reviews on</p>
         <img src={star} alt="@" />
       </div>
-
       <Slider />
     </>
   );
