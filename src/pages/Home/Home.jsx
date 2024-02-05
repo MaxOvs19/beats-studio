@@ -1,7 +1,8 @@
 import React from "react";
 import Banner from "../../components/Banner/Banner";
 import Slider from "../../components/Slider/Slider";
-import Settings from "../../components/Settings/Settings";
+import DescProduct from "../../components/DescProduct/DescProduct";
+import Tabs from "../../components/Tabs/Tabs";
 
 import star from "../../assets/logo-star.svg";
 
@@ -16,6 +17,8 @@ const Home = () => {
         <img src={star} alt="@" />
       </div>
       <Slider />
+      <DescProduct />
+      <Tabs />
     </>
   );
 };
