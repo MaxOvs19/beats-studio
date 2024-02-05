@@ -3,6 +3,7 @@ import Banner from "../../components/Banner/Banner";
 import Slider from "../../components/Slider/Slider";
 import DescProduct from "../../components/DescProduct/DescProduct";
 import Tabs from "../../components/Tabs/Tabs";
+import SliderYouTube from "../../components/SliderYouTube/SliderYouTube";
 
 import star from "../../assets/logo-star.svg";
 
@@ -19,6 +20,7 @@ const Home = () => {
       <Slider />
       <DescProduct />
       <Tabs />
+      <SliderYouTube />
     </>
   );
 };
